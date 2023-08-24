@@ -1,0 +1,223 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.wrapper {
+  flex: 1;
+}
+
+h1 {
+  color: #096e18;
+}
+h1 a {
+  text-decoration: none; /* Supprime le soulignement du lien */
+  color: inherit; /* Utilise la couleur héritée de l'élément parent */
+}
+.menu {
+  margin-top: 20px;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background-color: #096e18;
+  padding: 10px 0;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* styles.css */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.footer a {
+  text-decoration: underline; /* Souligner le lien */
+  color: inherit; /* Utiliser la couleur héritée de l'élément parent */
+}
+.footer p {
+  color: #fff; /* Couleur du texte dans le pied de page */
+}
+
+/* styles.css */
+.carousel img {
+  width: 50%; /* Ajustez cette valeur pour définir la largeur souhaitée */
+  height: auto; /* Laissez "auto" pour maintenir le ratio hauteur/largeur */
+  display: block;
+  margin: 0 auto;
+}
+/* styles.css */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #096e18;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #07530e;
+}
+.schedule {
+  font-weight: bold;
+  color: #2e2e2e;
+}
+.infosmails{
+  font-weight: bold;
+  color: #000000;
+  font-size: 24px;
+
+}
+  .souligner{
+    font-weight: bold;
+    color: #000000;
+    text-decoration: underline; /* Souligner le lien */
+}
+
+
+.description {
+  color: #333;
+}
+
+/* styles.css */
+/* ... Autres styles ... */
+
+.download-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #096e18;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.download-button:hover {
+  background-color: #07530e;
+}
+
+
+.wrapper h1 {
+  color: #096e18; /* Couleur par défaut pour le titre */
+}
+
+/* Style pour le titre de la page lorsque la page est active */
+.menu a.active {
+  color: rgb(255, 255, 255); /* Couleur du titre lorsque la page est active */
+  font-size: 18px; /* Augmenter la taille de la police */
+  border: 1px solid rgb(255, 255, 255); /* Ajouter un petit cadre autour du titre */
+  border-radius: 5px; /* Coins arrondis */
+  padding: 5px 10px; /* Espacement interne pour le cadre */
+}
+.menu-toggle {
+  display: none; /* Masque le bouton par défaut */
+  background-color: #096e18; /* Couleur de fond verte */
+  color: #fff; /* Couleur du texte blanc */
+  border: none; /* Supprime la bordure du bouton */
+  border-radius: 5px; /* Coins arrondis */
+  padding: 10px 20px; /* Espacement interne */
+  cursor: pointer;
+  
+}
+/* styles.css */
+
+/* ... Autres styles ... */
+.titremobile {
+  display: none; /* Masque le bouton par défaut */
+  background-color: #096e18; /* Couleur de fond verte */
+  color: #fff; /* Couleur du texte blanc */
+  border: none; /* Supprime la bordure du bouton */
+  cursor: pointer; 
+}
+/* Media query pour les appareils mobiles */
+/* Media query pour les appareils mobiles */
+@media (max-width: 768px) {
+  body {
+    text-align: center;
+  }
+  .titremobile {
+    display: block; /* Masque le bouton par défaut */
+  
+  }
+/* styles.css */
+
+/* Ajoutez une classe pour masquer le menu par défaut en version mobile */
+  .menu ul {
+    display: none;
+  }
+
+/* Ajoutez une classe pour afficher le menu en version mobile lorsque le bouton est cliqué */
+  .menu.active ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .menu li {
+    margin-right: 0;
+    margin-bottom: 5px; /* Réduit l'espacement vertical entre les éléments du menu */
+  }
+
+  .menu a.active {
+    font-size: 16px;
+    border: none;
+    padding: 5px 0;
+  }
+
+  .menu a {
+    padding: 10px; /* Ajoute de l'espacement autour des liens du menu */
+    text-align: center; /* Centre le texte dans les liens du menu */
+  }
+
+  .wrapper h1 {
+    font-size: 24px; /* Augmente la taille du titre pour la version mobile */
+    margin: 20px 0; /* Ajoute de l'espacement autour du titre */
+  }
+
+  .content {
+    padding: 20px; /* Ajoute de l'espacement autour du contenu */
+  }
+
+  .footer {
+    position: static; /* Annule la position fixe pour le pied de page */
+    padding: 20px 0; /* Ajoute de l'espacement autour du pied de page */
+  }
+  .menu-toggle {
+    display: block; /* Affiche le bouton en mode mobile */
+    margin: 0 auto; 
+  }
+}
+
+
+/* ... Autres styles ... */
